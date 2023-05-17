@@ -19,7 +19,7 @@
 
     useEffect(() => {
       getData();
-    }, []);  //[]
+    }, []);  
 
     return (
       <div id="Products">

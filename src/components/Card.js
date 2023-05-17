@@ -5,7 +5,7 @@ const Card =(props)=> {
   return (
     <>
     <div>
-      <img src={props.image} />
+      <img src={props.image} alt=''/>
       <p>{props.nameItem}</p>
       <p>{props.price}</p>
       <button type = "button" onClick={()=> Alert()}>Mua Ngày</button>
