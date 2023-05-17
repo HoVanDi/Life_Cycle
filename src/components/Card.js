@@ -1,4 +1,5 @@
 import React from 'react'
+import Swal from 'sweetalert2';
 
 const Card =(props)=> {
   return (
@@ -14,7 +15,13 @@ const Card =(props)=> {
 };
 
 function Alert() {
-  alert("Đã thêm vào giỏ hàng thành công")
+  Swal.fire({
+    position: 'center',
+    icon: 'success',
+    title: 'Cảm ơn bạn đã mùa hàng',
+    showConfirmButton: false,
+    timer: 1500
+  })
 }
 
 export default Card;
